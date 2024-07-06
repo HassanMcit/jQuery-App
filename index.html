@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task 14 - jQuery</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Blinker:wght@100;200;300;400;600;700;800;900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style/all.min.css">
+    <link rel="stylesheet" href="style/style.css">
+</head>
+
+<body>
+    <header class="position-relative">
+        <div class="nav-bar position-fixed bg-dark top-0 bottom-0">
+            <ul class="navbar-nav py-5 mb-2 mb-lg-0">
+                <li class="nav-item text-white fs-4 py-3">
+                    <a class="nav-link d-block px-4" aria-current="page" href="#home">Home</a>
+                </li>
+                <li class="nav-item text-white fs-4 py-3">
+                    <a class="nav-link d-block px-4" aria-current="page" href="#duration">Duration</a>
+                </li>
+                <li class="nav-item text-white fs-4 py-3">
+                    <a class="nav-link d-block px-4" aria-current="page" href="#detalis">Details</a>
+                </li>
+                <li class="nav-item text-white fs-4 py-3">
+                    <a class="nav-link d-block px-4" aria-current="page" href="#contact">Contact</a>
+                </li>
+            </ul>
+            <i class="fa-solid fa-x fa-1x text-white position-absolute cursor top-0 d-block end-0 p-4" id="close"></i>
+        </div>
+        <div class="p-5 main-title d-flex flex-column vh-100 justify-content-center align-items-center" id="home">
+            <h1 class="text-white font-size-60">ُEgyption Party</h1>
+            <p class="text-white">Let's Have Fun</p>
+            <div class="text-white open position-absolute start-0 fs-2" style="cursor: pointer;">
+                <i class="fa-solid fa-bars"></i>
+                Open
+            </div>
+        </div>
+    </header>
+    <main id="duration" class="py-5 ">
+        <div class="container pink w-50 my-5 text-center text-white ">
+            <div class="row updown">
+                <div class="col-12 px-0">
+                    <div class="inner">
+                        <h2 class="cursor one">ٍSinger one</h2>
+                        <div class="bg-secondary-subtle p-2  text-dark">
+                            "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
+                            ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                            laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in
+                            voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
+                            cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 px-0">
+                    <div class="inner">
+                        <h2 class="cursor two">Singer Two</h2>
+                        <div class="bg-secondary-subtle p-2  text-dark">
+                            "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque
+                            laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi
+                            architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit
+                            aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione
+                            voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet,
+                            consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et
+                            dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum
+                            exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi
+                            consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil
+                            molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?"
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 px-0">
+                    <div class="inner">
+                        <h2 class="cursor three">Singer Three</h2>
+                        <div class="bg-secondary-subtle p-2  text-dark">
+                            "But I must explain to you how all this mistaken idea of denouncing pleasure and praising
+                            pain was born and I will give you a complete account of the system, and expound the actual
+                            teachings of the great explorer of the truth, the master-builder of human happiness. No one
+                            rejects, dislikes, or avoids pleasure itself, because it is pleasure, but because those who
+                            do not know how to pursue pleasure rationally encounter consequences that are extremely
+                            painful. Nor again is there anyone who loves or pursues or desires to obtain pain of itself,
+                            because it is pain, but because occasionally circumstances occur in which toil and pain can
+                            procure him some great pleasure. To take a trivial example, which of us ever undertakes
+                            laborious physical exercise, except to obtain some advantage from it? But who has any right
+                            to find fault with a man who chooses to enjoy a pleasure that has no annoying consequences,
+                            or one who avoids a pain that produces no resultant pleasure?"
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 px-0">
+                    <div class="inner">
+                        <h2 class="cursor four">Singer Four</h2>
+                        <div class="bg-secondary-subtle p-2  text-dark">
+                            "At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium
+                            voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati
+                            cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id
+                            est laborum et dolorum fuga. Et harum quidem rerum facilis est et expedita distinctio. Nam
+                            libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod
+                            maxime placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus.
+                            Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe eveniet ut
+                            et voluptates repudiandae sint et molestiae non recusandae. Itaque earum rerum hic tenetur a
+                            sapiente delectus, ut aut reiciendis voluptatibus maiores alias consequatur aut perferendis
+                            doloribus asperiores repellat."
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <section id="detalis" class="py-5 ">
+        <div class="container">
+            <div class="row g-4 py-3">
+                <div class="col-12 col-md-6 col-lg-3 px-0  text-white">
+                    <div class="inner shadow border border-1 border-white mx-3 p-5 day">
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-3 px-0 text-white">
+
+                    <div class="inner shadow border border-1 border-white mx-3 p-5 hour">
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-3 px-0 text-white">
+
+                    <div class="inner shadow border border-1 border-white mx-3 p-5 min">
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-3 px-0 text-white">
+
+                    <div class="inner shadow border border-1 border-white mx-3 p-5 sec">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="contact" class="py-5 mt-5">
+        <div class="container pt-5">
+            <h3 class="fw-bolder fs-1">JOIN US</h3>
+            <p class="text-center text-body-tertiary">Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
+            <div class="row g-4">
+                <div class="col-12 col-md-6">
+                    <div class="inner">
+                        <h4 class="fw-bolder ">contact Info</h4>
+                        <p class="text-center color-777 fs-6 pb-5">Why you should hire me writeup Lorem ipsum dolor sit
+                            amet, consectetuer adipiscing elit.
+                            Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque nascetur ridiculus mus.
+                        </p>
+                        <div class="data-contact">
+                            <div class="text-center">
+                                <i class="fa-solid fa-location-dot pe-5 color-777"></i> New Street 22545, Nexa Road, New
+                                York City, USA
+                            </div>
+                            <div class="text-center d-flex justify-content-center align-items-center my-5">
+                                <i class="fa-solid fa-envelope pe-5 color-777"></i>
+                                <p class="text-danger my-0">hello@uigrid.com</p>
+                            </div>
+                            <div class="text-center">
+                                <i class="fa-solid fa-phone pe-5 color-777"></i> 001-000-000-000
+                            </div>
+                        </div>
+                        <div class="links-icon d-flex w-50 justify-content-between mt-5">
+                            <button type="button"
+                                class="btn btn-outline-danger d-flex rounded-0 justify-content-center align-items-center"
+                                style="width: 40px; height: 40px;"><i class="fa-brands fa-twitter "></i></button>
+                            <button type="button"
+                                class="btn btn-outline-danger d-flex rounded-0 justify-content-center align-items-center"
+                                style="width: 40px; height: 40px;"><i class="fa-brands fa-facebook-f "></i></button>
+                            <button type="button"
+                                class="btn btn-outline-danger d-flex rounded-0 justify-content-center align-items-center"
+                                style="width: 40px; height: 40px;"><i class="fa-brands fa-instagram "></i></button>
+                            <button type="button"
+                                class="btn btn-outline-danger d-flex rounded-0 justify-content-center align-items-center"
+                                style="width: 40px; height: 40px;"><i class="fa-solid fa-basketball "></i></button>
+                            <button type="button"
+                                class="btn btn-outline-danger d-flex rounded-0 justify-content-center align-items-center"
+                                style="width: 40px; height: 40px;"><i class="fa-brands fa-pinterest "></i></button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6">
+                    <div class="inner">
+                        <form class="row g-3">
+                            <div class="col-md-12">
+                                <input type="text" class="form-control rounded-0" placeholder="Enter Name" id="inputEmail4">
+                            </div>
+                            <div class="col-md-12">
+                                <input type="email" class="form-control rounded-0 my-2" placeholder="Enter Email"  id="inputPassword4">
+                            </div>
+                            <div class="col-md-12">
+                                <textarea class="form-control rounded-0" maxlength="100" placeholder="Enter Message" id="floatingTextarea2"
+                                    style="height: 200px"></textarea>
+                            </div>
+                            <div class="col-12 fs-4 normal">
+                                <span class="number text-danger">100</span> Character Reamining
+                            </div>
+                            <div class="col-12 fs-4 overflow">
+                                <span class="text-danger">test test</span>
+                            </div>
+                            <div class="col-12">
+                                <button type="submit"
+                                    class="btn btn-danger p-3 rounded-0 fs-5 fw-light text-uppercase">SEND
+                                    Message</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <script src="script/jquery-3.7.1.min.js"></script>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="script/index.js"></script>
+</body>
+
+</html>

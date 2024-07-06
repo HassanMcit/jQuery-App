@@ -91,3 +91,22 @@ header {
     text-align: center;
     font-size: 30px;
 }
+
+@media all and (min-width: 1020px) {
+    .links-icon {
+        width: 50%;       
+    }
+}
+
+@media all and (max-width: 900px) {
+    .main-title {
+        text-align: center;
+    }
+
+    .main-title h1 {
+        font-size: 25px;
+    }
+    .main-title div {
+        font-size: 15px !important;
+    }
+}

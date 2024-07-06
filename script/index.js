@@ -25,7 +25,7 @@ $('a.nav-link').on('mouseleave', function () {
 
 $('h2').on('click', function (e) {
     $(e.target.nextElementSibling).slideDown(1000); 
-    $('.updown div .inner h2').not(e.target).next().slideUp(700);
+    $('.updown div .inner h2').not(e.target).next().slideUp(1000);
     // $(e.target.nextElementSibling).slideToggle(1000);
 });
 

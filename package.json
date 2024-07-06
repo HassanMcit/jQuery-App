@@ -6,6 +6,8 @@
   "homepage": "https://hassanmcit.github.io/jQuery-App/",
   "scripts": {
     "predeploy": "npm run build",
-    "deploy": "gh-pages -d build"
+    "deploy": "gh-pages -d build",
+    "build": "npm run clean && npm run build:css && npm run build:js",
+    "start": "npm run clean && npm run build:css && npm run build:js"
   }
 }
